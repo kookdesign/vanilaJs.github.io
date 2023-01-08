@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+    background: #000;
+    font-family:'OpenSans',Arial, Helvetica, sans-serif;
+    color:#fff;
+    margin:0;
+    padding:0;
+    text-shadow:3px 3px 10px #3b402c;
+}
+
+.hidden {
+    display: none;
+}
+
+#bgImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width : 100vw;
+    height: 100vh;       
+}
+
+#center-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction : column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#clock {
+    font-size: 150px;
+    margin:10px 0;
+}
+
+#login-form {
+    margin:10px 0;    
+}
+
+#login-form input, #login-form input::placeholder {
+    background: transparent;
+    font-size: 50px;
+    border:none;
+    border-bottom:2px solid #fff;
+    color:#fff;
+    text-align: center;
+    outline: none;
+    text-shadow:3px 3px 5px #3b402c;
+    box-shadow: 0 2px 0 #3b402c24;
+}
+
+#login-form input[type=submit] {
+    display: none;
+}
+
+#todo-form input, #todo-form input::placeholder {
+    margin:50px 0;
+    padding:5px 15px;
+    background: transparent;
+    font-size: 20px;
+    border:none;
+    border-bottom:2px solid #fff;
+    color:#fff;
+    text-align: center;
+    outline: none;
+    width:350px;
+    text-shadow:3px 3px 5px #3b402c;
+    box-shadow: 0 2px 0 #3b402c24;
+}
+#todo-list li {
+    list-style: number;
+}
+#todo-list li span {
+    margin:0 10px;
+}
+
+#greeting {
+    margin:10px 0;
+    font-size: 50px;
+}
+
+#quote {
+    position: fixed;
+    bottom:10px;
+    text-align: center;    
+    width:100%;    
+}
+#quote span {
+    display:block;
+    font-size: 25px;
+}
+
+#weather {
+    position:absolute;
+    top:30px;
+    right:50px;
+}
